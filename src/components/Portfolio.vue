@@ -25,9 +25,9 @@ export default {
     return {
       projects: [
         {
-          title: 'Projet 1',
-          image: 'path/to/image1.jpg',
-          description: 'Description du projet 1'
+          title: 'Mon CV',
+          image: 'path/to/cv.png',
+          description: 'Mon CV'
         },
         {
           title: 'Projet 2',

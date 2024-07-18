@@ -1,7 +1,7 @@
 <template>
     <div>
       <h2>Bienvenue sur mon Portfolio</h2>
-      <p>Je suis DAVID Romain, un développeur web passionné.
+      <p>Je suis DAVID Romain, un développeur web passionné en cours de formation.
         Vous trouverez ici les différents projets réalisé.
 
       </p>

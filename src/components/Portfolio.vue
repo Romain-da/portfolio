@@ -8,13 +8,17 @@
         :title="project.title" 
         :image="project.image"
         :description="project.description"
+        :url="project.url"
       />
     </div>
   </div>
 </template>
 
 <script>
-import PortfolioItem from './PortfolioItem.vue' 
+import PortfolioItem from './PortfolioItem.vue';
+import cvImage from '@/assets/img/cv.png';
+import cdcImage from '@/assets/img/cdc.png';
+import commentaireImage from '@/assets/img/commentaire.png';
 
 export default {
   name: 'Portfolio',
@@ -26,17 +30,24 @@ export default {
       projects: [
         {
           title: 'Mon CV',
-          image: 'path/to/cv.png',
-          description: 'Mon CV'
+          image: cvImage,
+          description: 'Mon CV',
+          url:'./src/assets/projets/cv/index.html'
         },
         {
-          title: 'Projet 2',
-          image: 'path/to/image2.jpg',
-          description: 'Description du projet 2'
+          title: 'Cahier des charges',
+          image: cdcImage,
+          description: 'Cahier des charges pour le site "La Socketterie"',
+          url:'./src/assets/projets/devoir-cahier-des-charges/cahier-des-charges-la-socketterie.pdf'
         },
-        // Ajoutez plus de projets ici
+        {
+          title: 'Dynamiser un espace commentaire',
+          image: commentaireImage,
+          description: 'Application script JS pour dynamiser un espace commentaire',
+          url:'./src/assets/projets/devoir-commentaire/index.html'
+        }
       ]
-    }
+    };
   }
 }
 </script>
@@ -45,5 +56,11 @@ export default {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center;
+}
+h1{
+  display: flex;
+  justify-content: center;
 }
 </style>

@@ -3,7 +3,9 @@
     <h2>{{ title }}</h2>
     <img :src="image" alt="Project Image">
     <p>{{ description }}</p>
-    <button @click="showDetails">Voir les détails</button>
+    <a :href="url" target="_blank">
+      <button>Ouvrir le projet</button>
+    </a>
   </div>
 </template>
 
@@ -13,14 +15,11 @@ export default {
   props: {
     title: String,
     image: String,
-    description: String
-  },
-  methods: {
-    showDetails() {
-      // Logique pour afficher les détails du projet
-    }
+    description: String,
+    url: String
+
   }
-}
+};
 </script>
 
 <style scoped>

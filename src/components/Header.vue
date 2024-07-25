@@ -5,7 +5,7 @@
     <nav>
       <ul>
         <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/portfolio">Portfolio</router-link></li>
+        <!-- <li><router-link to="/portfolio">Portfolio</router-link></li>-->
         <li><router-link to="/contact">Contact</router-link></li>
       </ul>
     </nav>
@@ -18,7 +18,7 @@ export default {
 }
 </script>
   
-<style scoped>
+<style>
 header {
   background-color: #f1f1f1;
   display: flex;

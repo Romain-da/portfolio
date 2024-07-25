@@ -21,7 +21,7 @@
   }
   </script>
   
-  <style scoped>
+  <style>
   footer {
     text-align: center;
     padding: 10px 0;

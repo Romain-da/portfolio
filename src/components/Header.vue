@@ -4,9 +4,9 @@
     <h1>Portfolio DAVID Romain</h1>
     <nav>
       <ul>
-        <li><router-link to="/">Home</router-link></li>
-        <!-- <li><router-link to="/portfolio">Portfolio</router-link></li>-->
-        <li><router-link to="/contact">Contact</router-link></li>
+        <li><router-link to="/" exact-active-class="active-link">Home</router-link></li>
+        <li><router-link to="/notfound" exact-active-class="active-link">Portfolio</router-link></li>
+        <li><router-link to="/contact" exact-active-class="active-link">Contact</router-link></li>
       </ul>
     </nav>
   </header>
@@ -51,5 +51,9 @@ nav ul li {
 h1 {
   text-align: center;
   margin: 20px 0;
+}
+
+.active-link {
+  text-decoration: underline;
 }
 </style>

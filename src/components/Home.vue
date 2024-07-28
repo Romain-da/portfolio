@@ -16,6 +16,7 @@
           :image="project.image"
           :description="project.description"
           :link="project.link"
+          :creationDate="project.creactionDate"
           @show-details="showProjectDetails(project)"
         />
       </div>
@@ -24,6 +25,7 @@
           <h2>{{ selectedProject.title }}</h2>
           <img :src="selectedProject.image" alt="Project Image" v-if="selectedProject.image">
           <p>{{ selectedProject.description }}</p>
+          <p> Date de création : {{ selectedProject.creationDate }}</p>
           <div v-if="selectedProject.link">
             <iframe :src="selectedProject.link" width="100%" height="600px"></iframe>
             <br />
@@ -56,7 +58,8 @@ export default {
         {
           title: 'Mon CV',
           image: cvImage,
-          description: 'Mon CV, réalisé à partir de HTML et CSS avec FLEXBOX créé le 23/05/2024 ',
+          description: 'Mon CV, réalisé à partir de HTML et CSS avec FLEXBOX',
+          creationDate: '23/05/2024',
           a: './src/assets/projets/cv/index.html',
           link: './src/assets/projets/cv/index.html'
         },
@@ -64,12 +67,14 @@ export default {
           title: 'Cahier des charges',
           image: cdcImage,
           description: 'Cahier des charges pour le site "La Socketterie"',
+          creationDate: '03/07/2024',
           link: './src/assets/projets/devoir-cahier-des-charges/cahier-des-charges-la-socketterie.pdf'
         },
         {
           title: 'Dynamiser un espace commentaire',
           image: commentaireImage,
           description: 'Application script JS pour dynamiser un espace commentaire',
+          creationDate: '09/07/2024',
           link: './src/assets/projets/devoir-commentaire/index.html'
         }
       ]

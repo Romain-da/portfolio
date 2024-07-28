@@ -14,7 +14,8 @@ export default {
     title: String,
     image: String,
     description: String,
-    link: String
+    link: String,
+    creationDate: String
   }
 }
 </script>
@@ -24,6 +25,11 @@ export default {
   border: 1px solid #ccc;
   padding: 16px;
   margin: 16px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.portfolio-item:hover{
+  box-shadow: 0 4px 8px black;
 }
 </style>
 

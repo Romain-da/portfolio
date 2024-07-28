@@ -1,29 +1,30 @@
-# portfolio
+# Portfolio DAVID Romain
 
-This template should help get you started developing with Vue 3 in Vite.
+Ce projet est un portfolio en ligne pour DAVID Romain, développé avec Vue.js.
 
-## Recommended IDE Setup
+## Prérequis
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Avant de commencer, assurez-vous que vous avez les logiciels suivants installés sur votre machine :
 
-## Customize configuration
+- [Node.js](https://nodejs.org/) (version 14.x ou supérieure)
+- [npm](https://www.npmjs.com/) (version 6.x ou supérieure) ou [Yarn](https://yarnpkg.com/)
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Installation
 
-## Project Setup
+Suivez les étapes ci-dessous pour installer et lancer le projet localement :
 
-```sh
+1. Clonez le dépôt du projet :
+
+   ```bash
+
+## Accéder au répétoire du projet
+cd portfolio-david-romain
+
+## installer les dépendance du projet
 npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
+## lancer le projet
 npm run dev
-```
 
-### Compile and Minify for Production
-
-```sh
+## déploiment
 npm run build
-```
